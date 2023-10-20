@@ -92,13 +92,17 @@
         </div>
     </section>
 </body>
-<script src="{{ url(env('ASSETSPATHURL').'web-assets/js/jquery-3.6.3.min.js')}}"></script>
-<script src="{{ url(env('ASSETSPATHURL').'web-assets/js/custom.js')}}"></script>
-<script src="{{ url(env('ASSETSPATHURL').'web-assets/js/bootstrap.bundle.min.js')}}"></script>
-<script src="{{ url(env('ASSETSPATHURL').'web-assets/js/owl.carousel.min.js')}}"></script>
-<script src="{{ url(env('ASSETSPATHURL').'web-assets/js/jquery.dataTables.min.js')}}"></script>
-<script src="{{ url(env('ASSETSPATHURL').'web-assets/js/dataTables.bootstrap4.min.js')}}"></script>
-<script src="{{ url(env('ASSETSPATHURL').'web-assets/js/sweetalert2@11.js')}}"></script>
+<!-- {{ asset("web-assets/js/jquery-3.6.3.min.js") }} -->
+
+
+<script src="{{ asset('web-assets/js/jquery-3.6.3.min.js') }}"></script>
+<script src="{{ asset('web-assets/js/jquery-3.6.3.min.js')}}"></script>
+<script src="{{ asset('web-assets/js/custom.js')}}"></script>
+<script src="{{ asset('web-assets/js/bootstrap.bundle.min.js')}}"></script>
+<script src="{{ asset('web-assets/js/owl.carousel.min.js')}}"></script>
+<script src="{{ asset('web-assets/js/jquery.dataTables.min.js')}}"></script>
+<script src="{{ asset('web-assets/js/dataTables.bootstrap4.min.js')}}"></script>
+<script src="{{ asset('web-assets/js/sweetalert2@11.js')}}"></script>
 <script>
     $(document).ready(function() {
         $('#example').DataTable();

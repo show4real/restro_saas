@@ -395,37 +395,37 @@
         gtag('js', new Date());
         gtag('config', '{{ helper::appdata(1)->tracking_id }}');
     </script>
-    <script src="{{ url(env('ASSETSPATHURL') . 'web-assets/js/jquery-3.6.3.min.js') }}"></script>
-    <script src="{{ url(env('ASSETSPATHURL') . 'web-assets/js/custom.js') }}"></script>
+    <script src="{{ asset('web-assets/js/jquery-3.6.3.min.js') }}"></script>
+    <script src="{{ asset('web-assets/js/custom.js') }}"></script>
     <!-- Bootstrap Bundle Min Js -->
 
-    <script src="{{ url(env('ASSETSPATHURL') . 'web-assets/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ asset('web-assets/js/bootstrap.bundle.min.js') }}"></script>
 
     <!-- Owl Carousel Min Js -->
 
-    <script src="{{ url(env('ASSETSPATHURL') . 'web-assets/js/owl.carousel.min.js') }}"></script>
+    <script src="{{ asset('web-assets/js/owl.carousel.min.js') }}"></script>
 
-    <script src="{{ url(env('ASSETSPATHURL') . 'web-assets/js/toastr/toastr.min.js') }}"></script><!-- Toastr JS -->
+    <script src="{{ asset('web-assets/js/toastr/toastr.min.js') }}"></script><!-- Toastr JS -->
 
     <!-- Jquery DataTables Min Js -->
 
-    <script src="{{ url(env('ASSETSPATHURL') . 'web-assets/js/jquery.dataTables.min.js') }}"></script>
+    <script src="{{ asset('web-assets/js/jquery.dataTables.min.js') }}"></script>
 
     <!-- DataTables Bootstrap4 Min Js -->
 
-    <script src="{{ url(env('ASSETSPATHURL') . 'web-assets/js/dataTables.bootstrap4.min.js') }}"></script>
+    <script src="{{ asset('web-assets/js/dataTables.bootstrap4.min.js') }}"></script>
 
     <!-- Sweetalert2@11 Js -->
 
-    <script src="{{ url(env('ASSETSPATHURL') . 'web-assets/js/sweetalert2@11.js') }}"></script>
+    <script src="{{ asset('web-assets/js/sweetalert2@11.js') }}"></script>
 
     <!-- Aos Js -->
 
-    <script src="{{ url(env('ASSETSPATHURL') . 'web-assets/js/unpkg.com_aos@2.3.1_dist_aos.js') }}"></script>
+    <script src="{{ asset('web-assets/js/unpkg.com_aos@2.3.1_dist_aos.js') }}"></script>
 
     <!-- Swiper Bundle Min Js -->
 
-    <script src="{{ url(env('ASSETSPATHURL') . 'web-assets/js/cdn.jsdelivr.net_npm_swiper@9_swiper-bundle.min.js') }}">
+    <script src="{{ asset('web-assets/js/cdn.jsdelivr.net_npm_swiper@9_swiper-bundle.min.js') }}">
     </script>
 
     <script>
