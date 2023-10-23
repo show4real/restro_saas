@@ -49,15 +49,17 @@ class HomeController extends Controller
             Session::put('table_id',$request->tid);
         }
         $host = $_SERVER['HTTP_HOST'];
-        if ($host  ==  env('WEBSITE_HOST')) {
-            $storeinfo = helper::storeinfo($request->vendor);
+        // if ($host  ==  env('WEBSITE_HOST')) {
+           
+        // }
+        // // if the current host doesn't contain the website domain (meaning, custom domain)
+        // else {
+        //     $storeinfo = Settings::where('custom_domain', $host)->first();
+        //     $vdata = $storeinfo->vendor_id;
+        // }
+
+         $storeinfo = helper::storeinfo('admin');
             $vdata = $storeinfo->id;
-        }
-        // if the current host doesn't contain the website domain (meaning, custom domain)
-        else {
-            $storeinfo = Settings::where('custom_domain', $host)->first();
-            $vdata = $storeinfo->vendor_id;
-        }
         
         $getcategory = Category::where('vendor_id', $vdata)->where('is_available', '=', '1')->where('is_deleted', '2')->orderBy('reorder_id', 'ASC')->get();
         if(Auth::user() && Auth::user()->type == 3)
