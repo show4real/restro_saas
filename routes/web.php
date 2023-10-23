@@ -401,7 +401,7 @@ Route::post('/cart/deletecartitem', [HomeController::class, 'deletecartitem'])->
 Route::post('/orders/paymentmethod', [HomeController::class, 'paymentmethod'])->name('front.whatsapporder');
 Route::get('/cancel-order/{ordernumber}', [HomeController::class, 'cancelorder'])->name('front.cancelorder');
 Route::get('lang/change', [LangController::class, 'change'])->name('changeLang');
-Route::group(['namespace' => "front", 'prefix' => $prefix, 'middleware' => 'FrontMiddleware'], function () {
+Route::group(['namespace' => "front"], function () {
     Route::get('/', [HomeController::class, 'index'])->name('front.home');
     Route::get('/categories', [HomeController::class, 'categories'])->name('front.categories');
     Route::get('/product/{id}', [HomeController::class, 'show'])->name('front.home');
